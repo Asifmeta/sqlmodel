@@ -25,6 +25,7 @@
             from fastapi import FastAPI
 from sqlmodel import Field, Session, SQLModel, create_engine, select
 
+* copy full code for api and paste in main.py file
 
             class Hero(SQLModel, table=True):
                 id: int | None = Field(default=None, primary_key=True)
@@ -67,11 +68,10 @@ from sqlmodel import Field, Session, SQLModel, create_engine, select
                     heroes = session.exec(select(Hero)).all()
                     return heroes
                     
-* copy full code for api and paste in main.py file
-        * Remove following lines
+
+  * Remove following lines
 
             sqlite_file_name = "database.db"
 
-        * 
  
 
