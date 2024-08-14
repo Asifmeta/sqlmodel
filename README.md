@@ -19,4 +19,5 @@
 
         poetry add fastapi uvicorn sqlmodel psycopg2-binary  
 
-      
+## Now search "FastAPI and Pydantic - Intro" in Sql documentation
+* No go to "Simple Hero API with FastAPI"
