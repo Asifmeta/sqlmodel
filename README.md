@@ -17,7 +17,7 @@
 ## install dependencies
 * you can give search in neon documents sqlalchmay for getting psycopg2-bianry
 
-        poetry add fastapi uvicorn sqlmodel psycopg2-binary  
+        poetry add fastapi sqlmodel psycopg2-binary uvicorn[standard]    
 
 ## Now search "FastAPI and Pydantic - Intro" in Sql documentation
 * No go to "Simple Hero API with FastAPI"
