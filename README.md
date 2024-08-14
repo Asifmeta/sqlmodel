@@ -21,3 +21,6 @@
 
 ## Now search "FastAPI and Pydantic - Intro" in Sql documentation
 * No go to "Simple Hero API with FastAPI"
+* copy full code for api and paste in main.py file
+* Remove following lines
+*        sqlite_file_name = "database.db"
