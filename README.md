@@ -15,7 +15,7 @@
       code .
 
 ## install dependencies
-
+*you can give search in neon sqlalchmay for getting psycopg2-bianry
       poetry add fastapi uvicorn sqlmodel psycopg2-binary  
 
       
