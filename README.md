@@ -14,4 +14,8 @@
 
       code .
 
-## inst
+## install dependencies
+
+      poetry add fastapi uvicorn sqlmodel psycopg2-binary  
+
+      
