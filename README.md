@@ -1,3 +1,10 @@
+# Postgress installation with pgadmin tool
+https://www.youtube.com/watch?v=IYHx0ovvxPs
+https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+click the arrow below windows to start download
+![image](https://github.com/user-attachments/assets/b3ac29be-f833-450b-af59-a6b753dc779d)
+
+
 # sqlmodel.
 
 @ https://www.youtube.com/watch?v=m2rm94oUTkg&list=PLplW4d4HPsELkAU4_Iofhus90wRwRNe1o
