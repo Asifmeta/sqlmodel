@@ -34,11 +34,13 @@ from sqlmodel import Field, Session, SQLModel, create_engine, select
                 age: int | None = Field(default=None, index=True)
             
             
-            sqlite_file_name = "database.db"
-            sqlite_url = f"sqlite:///{sqlite_file_name}"
+            # sqlite_file_name = "database.db" # delete it 
+            # sqlite_url = f"sqlite:///{sqlite_file_name}" # change it to below line variable name and copy from neon data base and paste in f"  "
+            DATABASE_URL = F"postgresql://neondb_owner:E5act1oUAlxd@ep-rapid-bush-a5h1k4yn.us-east-2.aws.neon.tech/hero?sslmode=require"
             
-            connect_args = {"check_same_thread": False}
-            engine = create_engine(sqlite_url, echo=True, connect_args=connect_args)
+            # connect_args = {"check_same_thread": False} # delete it
+            # engine = create_engine(sqlite_url, echo=True, connect_args=connect_args)
+            engine = create_engine(DATABASE_URL)
             
             
             def create_db_and_tables():
@@ -48,9 +50,9 @@ from sqlmodel import Field, Session, SQLModel, create_engine, select
             app = FastAPI()
             
             
-            @app.on_event("startup")
-            def on_startup():
-                create_db_and_tables()
+            #@app.on_event("startup") # replace this whole block with lifespan
+            #def on_startup():
+            #    create_db_and_tables()
             
             
             @app.post("/heroes/")
@@ -69,9 +71,4 @@ from sqlmodel import Field, Session, SQLModel, create_engine, select
                     return heroes
                     
 
-  * Remove following lines
-
-            sqlite_file_name = "database.db"
-
- 
 
