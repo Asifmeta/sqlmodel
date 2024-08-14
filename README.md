@@ -23,4 +23,5 @@
 * No go to "Simple Hero API with FastAPI"
 * copy full code for api and paste in main.py file
 * Remove following lines
-      * sqlite_file_name = "database.db"
+
+  * sqlite_file_name = "database.db"
